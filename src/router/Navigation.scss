@@ -1,0 +1,13 @@
+.Navigation {
+  &__navbar {
+    background-color: var(--secondary) !important;
+    color: var(--tertiary) !important;
+  }
+  &__logo {
+    display: flex !important;
+    align-items: center !important;
+    img {
+      filter: invert(100%);
+    }
+  }
+}

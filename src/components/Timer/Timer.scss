@@ -1,0 +1,60 @@
+.TimerView {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__timer {
+    border: 2px solid var(--primary);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin: 10px 0 10px 0;
+  }
+  &__flag {
+    box-shadow: 0 8px 32px 0 rgba(209, 2, 2, 0.37);
+  }
+  &__noFlag {
+    box-shadow: 0 8px 32px 0 rgba(173, 173, 173, 0.37);
+  }
+}
+
+.InputField {
+  &__container {
+    input {
+      border: 2px solid var(--tertiary);
+      padding: 3px;
+      border-radius: 5px;
+      width: 30px;
+    }
+  }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.Buttons {
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 2.4em;
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border-radius: 100%;
+      border: 2px solid var(--tertiary);
+      box-shadow: 0 8px 32px 0 rgba(173, 173, 173, 0.37);
+      padding: 3px;
+    }
+  }
+}
