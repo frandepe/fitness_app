@@ -1,7 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route, Navigate } from "react-router-dom";
 import HomeIcon from "@rsuite/icons/legacy/Home";
-import CogIcon from "@rsuite/icons/legacy/Cog";
 import { Navbar, Nav } from "rsuite";
 import { Home } from "../pages/Home";
 import "./Navigation.scss";
@@ -26,19 +25,31 @@ export const Navigation = () => {
             <Nav.Item icon={<HomeIcon />} href="/home">
               Home
             </Nav.Item>
-            <Nav.Item href="/users">Users</Nav.Item>
-            <Nav.Item href="/about">About</Nav.Item>
-            <Nav.Menu title="About">
-              <Nav.Item>Company</Nav.Item>
-              <Nav.Item>Team</Nav.Item>
-              <Nav.Menu title="Contact">
-                <Nav.Item>Via email</Nav.Item>
-                <Nav.Item>Via telephone</Nav.Item>
-              </Nav.Menu>
-            </Nav.Menu>
           </Nav>
-          <Nav pullRight>
-            <Nav.Item icon={<CogIcon />}>Settings</Nav.Item>
+          <Nav pullRight style={{ marginRight: "10px" }}>
+            <Nav.Menu title="Dev" className="Navigation__dropdown">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://frandepaulo.com"
+              >
+                Portfolio
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/franco-de-paulo/"
+              >
+                LinkedIn
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/frandepe"
+              >
+                GitHub
+              </a>
+            </Nav.Menu>
           </Nav>
         </Navbar>
 

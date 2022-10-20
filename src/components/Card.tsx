@@ -4,6 +4,7 @@ import { ButtonToolbar, Modal, Button } from "rsuite";
 import { Outlet } from "react-router";
 import TimerView from "./Timer/TimerView";
 import { useLocation } from "react-router-dom";
+import LazyLoad from "./LazyLoad";
 
 interface Props {
   data: {
@@ -39,7 +40,7 @@ export const Card = ({ data }: Props) => {
             <ButtonToolbar>
               {location?.pathname === "/home" ? (
                 <div onClick={handleOpen}>
-                  <img
+                  <LazyLoad
                     onClick={handleImg}
                     src={gifUrl}
                     alt={name}
@@ -48,7 +49,7 @@ export const Card = ({ data }: Props) => {
                 </div>
               ) : (
                 <div>
-                  <img src={gifUrl} alt={name} />
+                  <LazyLoad src={gifUrl} alt={name} />
                 </div>
               )}
             </ButtonToolbar>

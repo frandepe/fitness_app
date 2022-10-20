@@ -2,12 +2,14 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 interface Props {
   alt: string;
-  height: string;
+  height?: string;
   src: string;
-  width: string;
+  width?: string;
+  onClick?: () => void;
+  className?: any;
 }
 
-const LazyLoad = ({ alt, height, src, width }: Props) => {
+const LazyLoad = ({ alt, height, src, width, onClick, className }: Props) => {
   return (
     <LazyLoadImage
       effect="blur"
@@ -15,6 +17,8 @@ const LazyLoad = ({ alt, height, src, width }: Props) => {
       alt={alt}
       height={height}
       width={width}
+      onClick={onClick}
+      className={className}
     />
   );
 };

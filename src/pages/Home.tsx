@@ -1,10 +1,10 @@
-import { BodyFront } from "../components/BodyFront/BodyFront";
+import { Bodies } from "../components/Bodies/Bodies";
 import "./Home.scss";
 
 export const Home = () => {
   return (
     <div className="Home__container">
-      <BodyFront />
+      <Bodies />
     </div>
   );
 };

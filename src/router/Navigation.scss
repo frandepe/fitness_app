@@ -10,4 +10,16 @@
       filter: invert(100%);
     }
   }
+  &__dropdown {
+    a {
+      text-decoration: none;
+      padding: 5px;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
 }
